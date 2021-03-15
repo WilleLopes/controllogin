@@ -1,0 +1,113 @@
+html,
+body {
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+  div.body {
+      background-color: rgba(150, 49, 49, 0.925);
+      height: 100%;
+      width: 100%;
+      font-size: 30px;
+      justify-content: center; 
+      align-items: center;
+      display: flex;
+      
+  }
+
+  div.in {
+      background-color: hsl(0, 23%, 74%);
+      width: 350px;
+      height: 380px;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      display: flex;
+      border-radius: 30%;
+      animation: move 2s;
+        animation-delay: 1s;
+        animation-fill-mode: backwards;
+
+  }
+
+  div.put {
+    background-color: #080802f1;
+    width: 370px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    border-radius: 25%;
+    animation: move 2s;
+        animation-delay: 1s;
+        animation-fill-mode: backwards;
+  }
+
+  
+  
+
+  
+
+div.block2 {
+display: flex;
+height: 40px;
+      width: 40px;
+      border-radius: 20%;
+      
+      background-color: #d6211af1;
+      position: relative;
+      align-items: flex-start;
+      justify-content: flex-start;
+}
+
+
+
+.block2 li {
+    width: 40px;
+    height: 40px;
+    background-color: hsl(0, 23%, 74%);
+    display: block;
+    position: absolute;
+  bottom: -70px;
+  border-radius: 20%;
+  animation: up 0.2ms infinite;
+  animation-direction: alternate;
+}
+
+
+@keyframes up {
+    from {
+      opacity: 0;
+      transform: translateY(-500);
+    }
+    50% {
+      opacity: 0.9;
+    }
+    to {
+      transform: translateY(-900px) rotate(1600deg);
+    }
+  }
+
+
+  @keyframes move {
+    from {
+      opacity: 0;
+      transform: translateX(-35%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+  }
+  @keyframes fade {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+}
