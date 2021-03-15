@@ -1,3 +1,10 @@
+
+
+
+
+
+
+
 const ulBlock2 = document.querySelector("ul.block2");
 
 for (let quadrado = 0; quadrado < 100; quadrado++){
