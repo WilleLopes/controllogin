@@ -17,7 +17,7 @@ body {
   }
 
   div.in {
-      background-color: hsl(0, 23%, 74%);
+      background-color: hsl(0, 0%, 100%);
       width: 380px;
       height: 390px;
       justify-content: center;
@@ -29,6 +29,8 @@ body {
         animation-delay: 1s;
         animation-fill-mode: backwards;
         border-radius: 20px;
+        box-shadow:20px 20px 10px;
+        box-sizing: border-box;
 
   }
 
@@ -68,26 +70,110 @@ height: 40px;
 .block2 li {
     width: 40px;
     height: 40px;
-    background-color: hsl(0, 23%, 74%);
+    background-color: none;
     display: block;
     position: absolute;
   bottom: -70px;
   border-radius: 20%;
   animation: up 0.2ms infinite;
   animation-direction: alternate;
+  background-image: url("./src/wifi-router.svg")
 }
+
+div.block3 {
+  display: flex;
+  height: 40px;
+        width: 40px;
+        border-radius: 20%;
+        
+        background-color: none;
+        position: relative;
+        align-items: flex-start;
+        justify-content: flex-start;
+  }
+  
+  
+  
+  .block3 li {
+      width: 40px;
+      height: 40px;
+      background-color: none;
+      display: block;
+      position: absolute;
+    bottom: -70px;
+    border-radius: 20%;
+    animation: up 0.2ms infinite;
+    animation-direction: alternate;
+    background-image: url("./src/cluster.svg");
+  }
+
+  div.block4 {
+    display: flex;
+    height: 40px;
+          width: 40px;
+          border-radius: 20%;
+          
+          background-color: none;
+          position: relative;
+          align-items: flex-start;
+          justify-content: flex-start;
+    }
+    
+    
+    
+    .block4 li {
+        width: 40px;
+        height: 40px;
+        background-color: none;
+        display: block;
+        position: absolute;
+      bottom: -70px;
+      border-radius: 20%;
+      animation: up 0.2ms infinite;
+      animation-direction: alternate;
+      background-image: url("./src/wifi-router.svg")
+    }
+    
+    div.block5 {
+      display: flex;
+      height: 40px;
+            width: 40px;
+            border-radius: 20%;
+            
+            background-color: none;
+            position: relative;
+            align-items: flex-start;
+            justify-content: flex-start;
+      }
+      
+      
+      
+      .block5 li {
+          width: 40px;
+          height: 40px;
+          background-color:none;
+          display: block;
+          position: absolute;
+        bottom: -70px;
+        border-radius: 20%;
+        animation: up 0.2ms infinite;
+        animation-direction: alternate;
+        background-image: url("./src/cluster.svg");
+      }
+
+
 
 
 @keyframes up {
     from {
-      opacity: 0;
+      opacity: 0.5;
       transform: translateY(-500);
     }
     50% {
-      opacity: 0.9;
+      opacity: 1;
     }
     to {
-      transform: translateY(-900px) rotate(1600deg);
+      transform: translateY(-900px) rotate(1deg);
     }
   }
 
@@ -95,7 +181,7 @@ height: 40px;
   @keyframes move {
     from {
       opacity: 0;
-      transform: translateX(-35%);
+      transform: translateX(-100%);
     }
     to {
       opacity: 1;
@@ -120,11 +206,11 @@ h1 {
 }
 .btn-login {
     display: block;
-    min-width: 80px;
+    min-width: 60px;
     border: none;
     background-color: #f7e7e5;
-    color: rgb(10, 10, 10);
-    border-radius: 20px;
+    border-color: #db1f06;
+    border-radius: 10px;
     margin-top: 30px;
     padding: 7px;
    
@@ -158,3 +244,4 @@ align-items: center;
     outline-color: #db1f06;
   }
 
+  
